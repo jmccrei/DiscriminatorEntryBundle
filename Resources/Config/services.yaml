@@ -1,0 +1,5 @@
+services:
+  Jmccrei\DiscriminatorEntryBundle\:
+    resource: '../../'
+    exclude:
+      - '../../DependencyInjection/'

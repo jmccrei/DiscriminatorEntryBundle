@@ -1,0 +1,40 @@
+{
+  "type": "symfony-bundle",
+  "license": "proprietary",
+  "name": "jmccrei/discriminator-entry-bundle",
+  "require": {
+    "php": "^7.2.5",
+    "ext-ctype": "*",
+    "ext-iconv": "*",
+    "sensio/framework-extra-bundle": "^5.6",
+    "doctrine/orm": "^2.7",
+    "doctrine/doctrine-bundle": "^2.1",
+    "doctrine/doctrine-migrations-bundle": "^3.0",
+    "symfony/doctrine-bridge": "^5.1"
+  },
+  "require-dev": {
+    "symfony/phpunit-bridge": "^5.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Jmccrei\\DiscriminatorEntry\\": "/"
+    },
+    "exclude-from-classmap": [
+      "/Tests/"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Jmccrei\\DiscriminatorEntry\\Tests\\": "Tests/"
+    }
+  },
+  "replace": {
+    "paragonie/random_compat": "2.*",
+    "symfony/polyfill-ctype": "*",
+    "symfony/polyfill-iconv": "*",
+    "symfony/polyfill-php72": "*",
+    "symfony/polyfill-php71": "*",
+    "symfony/polyfill-php70": "*",
+    "symfony/polyfill-php56": "*"
+  }
+}
